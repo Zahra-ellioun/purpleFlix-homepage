@@ -18,14 +18,14 @@ const Header = () => {
 
   return (
     <header
-      className={` text-white py-3 px-8 fixed top-0 z-50 w-full ${
+      className={` text-white py-3 px-2 sm:px-8 fixed top-0 z-50 w-full ${
         scroll
           ? " bg-[#140028]"
           : "bg-linear-to-b from-[#140028]/30 via-[#0F0F19]/30 to-[#0B0B13]/30"
       }`}
     >
       {/* container */}
-      <div className="flex justify-between items-center self-stretch grow-0 shrink-0  overflow-hidden gap-4">
+      <div className="flex justify-between items-center self-stretch grow-0 shrink-0  overflow-hidden gap-2 sm:gap-4">
         {/* logo and name */}
         <div className="flex items-center justify-start grow-0 shrink-0  gap-3">
           {/* logo */}
@@ -37,7 +37,7 @@ const Header = () => {
             height={100}
           />
           {/* پورپلفلیکس */}
-          <p className="grow-0 shrink-0 text-3xl font-semibold text-right">
+          <p className="grow-0 shrink-0 text-sm sm:text-3xl font-semibold text-right">
             <span className="grow-0 shrink-0  text-white">پورپل</span>
             <span className="grow-0 shrink-0  text-[#8B5CF6]">فلیکس</span>
           </p>
