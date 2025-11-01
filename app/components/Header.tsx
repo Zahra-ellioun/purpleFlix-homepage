@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex items-center justify-start grow-0 shrink-0  gap-3">
           {/* logo */}
           <Image
-            src="/logo.png"
+            src="/images/logo.png"
             className="object-none h-[41px] w-[46.61px] shadow-inner"
             alt="Logo"
             width={100}

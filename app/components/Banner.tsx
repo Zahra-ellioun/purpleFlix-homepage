@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div className="relative w-full overflow-hidden">
       <Image
-        src="/banner.png"
+        src="/images/banner.png"
         alt="banner"
         width={1080}
         height={1920}
