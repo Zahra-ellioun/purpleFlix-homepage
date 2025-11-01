@@ -37,7 +37,7 @@ const Header = () => {
             height={100}
           />
           {/* پورپلفلیکس */}
-          <p className="grow-0 shrink-0 text-sm sm:text-3xl font-semibold text-right">
+          <p className="grow-0 shrink-0 text-base sm:text-3xl font-semibold text-right">
             <span className="grow-0 shrink-0  text-white">پورپل</span>
             <span className="grow-0 shrink-0  text-[#8B5CF6]">فلیکس</span>
           </p>
@@ -78,9 +78,9 @@ const Header = () => {
         </nav>
 
         {/* action btns and icons*/}
-        <div className=" items-center justify-end grow-0 shrink-0  gap-5 hidden sm:flex ">
+        <div className=" items-center justify-end grow-0 shrink-0  gap-5 flex ">
           {/* icons */}
-          <div className="flex gap-2 text-lg ">
+          <div className="hidden sm:flex gap-2 text-lg ">
             <span>
               <CiSearch />
             </span>
@@ -93,10 +93,10 @@ const Header = () => {
           </div>
           {/* buttons  */}
           <div className="flex justify-end items-center grow-0 shrink-0 gap-2 text-base lg:text-xl">
-            <button className="grow-0 shrink-0 px-3 py-2 rounded-lg bg-neutral-600/50 border border-neutral-700/5 hover:bg-neutral-800/50 transition duration-300  text-center text-violet-100">
+            <button className="grow-0 shrink-0 px-2 py-1 sm:px-3 sm:py-2 rounded-lg bg-neutral-600/50 border border-neutral-700/5 hover:bg-neutral-800/50 transition duration-300  text-center text-violet-100">
               ورود
             </button>
-            <button className="grow-0 shrink-0 px-3 py-2 rounded-lg bg-[#8B5CF6] border border-neutral-700/5 hover:bg-[#763dfa] transition duration-300  text-center text-violet-100">
+            <button className="grow-0 shrink-0 px-2 py-1 sm:px-3 sm:py-2 rounded-lg bg-[#8B5CF6] border border-neutral-700/5 hover:bg-[#763dfa] transition duration-300  text-center text-violet-100">
               دانلود اپ
             </button>
           </div>
