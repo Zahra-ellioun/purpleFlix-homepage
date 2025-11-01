@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header
-      className={` text-white py-3 px-2 sm:px-8 fixed top-0 z-50 w-full ${
+      className={` text-white py-1 sm:py-3 px-2 sm:px-8 fixed top-0 z-50 w-full ${
         scroll
           ? " bg-[#140028]"
           : "bg-linear-to-b from-[#140028]/30 via-[#0F0F19]/30 to-[#0B0B13]/30"
