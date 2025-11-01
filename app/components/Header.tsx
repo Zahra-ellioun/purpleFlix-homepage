@@ -1,10 +1,29 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 import { CiSearch, CiBookmark, CiTimer } from "react-icons/ci";
 
 const Header = () => {
+  const [scroll, SetScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      SetScroll(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-linear-to-b from-[#140028]/30 via-[#0F0F19]/30 to-[#0B0B13]/30   text-white py-3 px-8 fixed top-0 z-50 w-full">
+    <header
+      className={` text-white py-3 px-8 fixed top-0 z-50 w-full ${
+        scroll
+          ? " bg-[#140028]"
+          : "bg-linear-to-b from-[#140028]/30 via-[#0F0F19]/30 to-[#0B0B13]/30"
+      }`}
+    >
       {/* container */}
       <div className="flex justify-between items-center self-stretch grow-0 shrink-0  overflow-hidden gap-4">
         {/* logo and name */}
