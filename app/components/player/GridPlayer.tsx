@@ -3,18 +3,22 @@ import VideoPlayer from "./Player";
 
 const GridPlayer = () => {
   return (
-    <div className="grid grid-cols-[auto_auto_auto] grid-rows-2 gap-6">
-      <div className="row-span-2">
+    <div className="grid grid-cols-1 sm:grid-cols-[auto_auto_auto] sm:grid-rows-2 gap-6">
+      <div className="sm:row-span-2">
         <VideoPlayer src="/videos/trailer.mp4" />
       </div>
-
-      <Card image={"/images/image-66.png"} />
-
-      <Card image={"/images/image-66.png"} />
-
-      <Card image={"/images/image-66.png"} />
-
-      <Card image={"/images/image-66.png"} />
+      <div className="mx-auto ">
+        <Card image={"/images/image-66.png"} />
+      </div>
+      <div className="mx-auto">
+        <Card image={"/images/image-66.png"} />
+      </div>
+      <div className="mx-auto">
+        <Card image={"/images/image-66.png"} />
+      </div>
+      <div className="mx-auto">
+        <Card image={"/images/image-66.png"} />
+      </div>
     </div>
   );
 };
